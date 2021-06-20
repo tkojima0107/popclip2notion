@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Actions</key>
+	<array>
+		<dict>
+			<key>Image File</key>
+			<string>icon.png</string>
+			<key>Shell Script File</key>
+			<string>caller.sh</string>
+			<key>Title</key>
+			<string>Send to Notion</string>
+			<key>After</key>
+			<string>show-result</string>
+		</dict>
+	</array>
+	<key>Extension Description</key>
+	<string>Send a selected text to a notion database quickly</string>
+	<key>Extension Identifier</key>
+	<string>local.popclip.extension.send2notion</string>
+	<key>Blocked Apps</key>
+	<array>
+		<string>notion.id</string>
+	</array>
+	<key>Extension Name</key>
+	<dict>
+		<key>en</key>
+		<string>Send to Notion</string>
+	</dict>
+	<key>Required Software Version</key>
+	<integer>693</integer>
+	<key>Credits</key>
+	<dict>
+		<key>Name</key>
+		<string>tkojima0107</string>
+		<key>Link</key>
+		<string>https://github.com/tkojima0107/popclip2notion</string>
+	</dict>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Option Identifier</key>
+			<string>token</string>
+			<key>Option Label</key>
+			<string>Set your Internal Integration Token (necessary)</string>
+			<key>Option Type</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>Option Identifier</key>
+			<string>mode</string>
+			<key>Option Label</key>
+			<string>Adding to</string>
+			<key>Option Type</key>
+			<string>multiple</string>
+			<key>Option Values</key>
+			<array>
+				<string>database</string>
+				<string>block</string>
+			</array>
+			<key>Option Default Value</key>
+			<string>database</string>
+		</dict>
+		<dict>
+			<key>Option Identifier</key>
+			<string>databaseid</string>
+			<key>Option Label</key>
+			<string>Set a database ID (Required for adding a database</string>
+			<key>Option Type</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>Option Identifier</key>
+			<string>blockid</string>
+			<key>Option Label</key>
+			<string>Set a block ID</string>
+			<key>Option Type</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>Option Identifier</key>
+			<string>blocktype</string>
+			<key>Option Label</key>
+			<string>Set a block type</string>
+			<key>Option Type</key>
+			<string>multiple</string>
+			<key>Option Values</key>
+			<array>
+				<string>paragraph</string>
+				<string>heading_1</string>
+				<string>heading_2</string>
+				<string>heading_3</string>
+				<string>bulleted_list_item</string>
+				<string>numbered_list_item</string>
+				<string>to_do</string>
+				<string>toggle</string>
+			</array>
+			<key>Option Default Value</key>
+			<string>paragraph</string>
+		</dict>
+	</array>
+	<key>Options Title</key>
+	<string>Configure your notion integration</string>
+</dict>
+</plist>
