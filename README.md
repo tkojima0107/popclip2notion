@@ -1,11 +1,19 @@
 ## What is this?
-This is an extension to connect [popclip](https://pilotmoon.com/popclip/) to [notion](https://www.notion.so/product) using an official notion API.
+This is an extension to connect [PopClip](https://pilotmoon.com/popclip/) to [Notion](https://www.notion.so/product) using an official notion API.
 
 You can send a selected text to your notion workspace quickly.
 
 For now, one database and one block(including a page) can be configure to be sent to.
 
+This extension is disabled on notion client app.
+If you want to enable it, delete the line  `<string>notion.id</string>` in Config.plist.
+
 **Please use this extension at your own rick. We assume no responsibility whatsoever for any damages resulting from the use of this site.**
+
+## Requirement
+This extension is based on a python3 script.
+
+If you don't install python3 on your Mac, please install it.
 
 ## Get your notion integrations
 Before installing this extension, please create an integration (obtaining Internal Integration Token)
